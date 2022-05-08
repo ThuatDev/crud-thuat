@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="sp">
+      <div class="form">
+        <div class="form-group">
+          <label for="name">Name: </label>
+          <input id="name" type="text" class="form-input" />
+          <div class="error-message" style="color: red"></div>
+        </div>
+        <div class="form-group">
+          <label for="address">IMG: </label>
+          <input id="address" type="text" class="form-input" />
+          <div class="error-message" style="color: #e62626"></div>
+        </div>
+        <div class="form-group">
+          <input id="index" type="hidden" />
+        </div>
+        <button id="save" onclick="addNew()">Add New</button>
+        <button id="update" onclick="changeStudent()" style="display: none">
+          Update
+        </button>
+        <table
+          border="1"
+          cellspacing="0"
+          cellpadding="18"
+          id="tableContent"
+        ></table>
+      </div>
+      <script src="./main.js"></script>
+      <script src="./demo.js"></script>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
